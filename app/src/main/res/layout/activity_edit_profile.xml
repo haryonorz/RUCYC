@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.EditProfile">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_changeP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAppBarBackground"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:elevation="1dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_changeP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/back_imageView"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_false" />
+
+                <TextView
+                    android:id="@+id/changeP_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="12dp"
+                    android:fontFamily="@font/gotham_medium"
+                    android:text="@string/edit_profile"
+                    android:textColor="@color/colorAppBarText2"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:background="@color/colorWhiteBackground"
+        app:layout_constraintTop_toBottomOf="@+id/appbar_changeP">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/footer_image"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:cropToPadding="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/save_button"
+                app:srcCompat="@drawable/bg_footer_login" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/photoProfile_imageView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="40dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bg_add_photo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:riv_corner_radius="75dp" />
+
+            <TextView
+                android:id="@+id/fname_textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="34dp"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/font_gotham_medium"
+                android:text="@string/register_first_name"
+                android:textAllCaps="true"
+                android:textColor="@color/colorTitleInputText"
+                android:textSize="9sp"
+                app:layout_constraintEnd_toEndOf="@+id/fname_layout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/photoProfile_imageView" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/fname_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="5dp"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toStartOf="@+id/lname_layout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fname_textView">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/fname_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/input_edittext"
+                    android:ems="10"
+                    android:fontFamily="@font/font_gotham_book"
+                    android:hint="@string/register_first_name"
+                    android:inputType="textCapWords|textPersonName"
+                    android:nextFocusDown="@+id/lname_editText"
+                    android:padding="10dp"
+                    android:textSize="14sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/lname_textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/font_gotham_medium"
+                android:text="@string/register_last_name"
+                android:textAllCaps="true"
+                android:textColor="@color/colorTitleInputText"
+                android:textSize="9sp"
+                app:layout_constraintEnd_toEndOf="@+id/lname_layout"
+                app:layout_constraintStart_toStartOf="@+id/lname_layout"
+                app:layout_constraintTop_toTopOf="@+id/fname_textView" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/lname_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="5dp"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/fname_layout"
+                app:layout_constraintTop_toBottomOf="@+id/lname_textView">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/lname_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/input_edittext"
+                    android:ems="10"
+                    android:fontFamily="@font/font_gotham_book"
+                    android:hint="@string/register_last_name"
+                    android:inputType="textCapWords|textPersonName"
+                    android:nextFocusDown="@id/email_editText"
+                    android:padding="10dp"
+                    android:textSize="14sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/email_textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/font_gotham_medium"
+                android:text="@string/fill_email"
+                android:textAllCaps="true"
+                android:textColor="@color/colorTitleInputText"
+                android:textSize="9sp"
+                app:layout_constraintStart_toStartOf="@+id/fname_textView"
+                app:layout_constraintTop_toBottomOf="@+id/fname_layout" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/email_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toEndOf="@+id/lname_layout"
+                app:layout_constraintStart_toStartOf="@+id/fname_layout"
+                app:layout_constraintTop_toBottomOf="@+id/email_textView">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/email_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/input_edittext"
+                    android:ems="10"
+                    android:fontFamily="@font/font_gotham_book"
+                    android:hint="@string/fill_email"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:textSize="14sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/birthdate_textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="34dp"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/font_gotham_medium"
+                android:text="@string/fill_birthdate"
+                android:textAllCaps="true"
+                android:textColor="@color/colorTitleInputText"
+                android:textSize="9sp"
+                app:layout_constraintEnd_toEndOf="@+id/year_birthdate_layout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/email_layout" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/date_birthdate_layout"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="5dp"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toStartOf="@+id/month_birthdate_layout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/birthdate_textView">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/date_birthdate_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/input_edittext"
+                    android:cursorVisible="false"
+                    android:drawableRight="@drawable/ic_spinner"
+                    android:ems="10"
+                    android:fontFamily="@font/font_gotham_book"
+                    android:focusable="false"
+                    android:hint="@string/fill_date_birthdate"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:padding="10dp"
+                    android:textSize="14sp"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/month_birthdate_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="5dp"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toStartOf="@+id/year_birthdate_layout"
+                app:layout_constraintStart_toEndOf="@+id/date_birthdate_layout"
+                app:layout_constraintTop_toBottomOf="@+id/birthdate_textView">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/month_birthdate_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/input_edittext"
+                    android:cursorVisible="false"
+                    android:drawableRight="@drawable/ic_spinner"
+                    android:ems="10"
+                    android:fontFamily="@font/font_gotham_book"
+                    android:focusable="false"
+                    android:hint="@string/fill_month_birthdate"
+                    android:inputType="textCapSentences"
+                    android:padding="10dp"
+                    android:textSize="14sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/year_birthdate_layout"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="5dp"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/month_birthdate_layout"
+                app:layout_constraintTop_toBottomOf="@+id/birthdate_textView">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/year_birthdate_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/input_edittext"
+                    android:cursorVisible="false"
+                    android:drawableRight="@drawable/ic_spinner"
+                    android:ems="10"
+                    android:fontFamily="@font/font_gotham_book"
+                    android:focusable="false"
+                    android:hint="@string/fill_year_birthdate"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:padding="10dp"
+                    android:textSize="14sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/height_textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/font_gotham_medium"
+                android:text="@string/fill_height"
+                android:textAllCaps="true"
+                android:textColor="@color/colorTitleInputText"
+                android:textSize="9sp"
+                app:layout_constraintStart_toStartOf="@+id/birthdate_textView"
+                app:layout_constraintTop_toBottomOf="@+id/date_birthdate_layout" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/height_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="5dp"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toStartOf="@id/weight_layout"
+                app:layout_constraintStart_toStartOf="@id/date_birthdate_layout"
+                app:layout_constraintTop_toBottomOf="@+id/weight_textView">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/height_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/input_edittext"
+                    android:ems="10"
+                    android:fontFamily="@font/font_gotham_book"
+                    android:hint="@string/fill_height_hint"
+                    android:inputType="numberDecimal"
+                    android:padding="10dp"
+                    android:textSize="14sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/weight_textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/font_gotham_medium"
+                android:text="@string/fill_weight"
+                android:textAllCaps="true"
+                android:textColor="@color/colorTitleInputText"
+                android:textSize="9sp"
+                app:layout_constraintStart_toStartOf="@+id/weight_layout"
+                app:layout_constraintTop_toTopOf="@+id/height_textView" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/weight_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toEndOf="@+id/year_birthdate_layout"
+                app:layout_constraintStart_toEndOf="@+id/height_layout"
+                app:layout_constraintTop_toBottomOf="@+id/weight_textView">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/weight_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/input_edittext"
+                    android:ems="10"
+                    android:fontFamily="@font/font_gotham_book"
+                    android:hint="@string/fill_weight_hint"
+                    android:inputType="numberDecimal"
+                    android:nextFocusDown="@+id/district_editText"
+                    android:padding="10dp"
+                    android:textSize="14sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/gender_textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/font_gotham_medium"
+                android:text="@string/fill_gender"
+                android:textAllCaps="true"
+                android:textColor="@color/colorTitleInputText"
+                android:textSize="9sp"
+                app:layout_constraintStart_toStartOf="@+id/height_textView"
+                app:layout_constraintTop_toBottomOf="@+id/height_layout" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/gender_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toEndOf="@+id/year_birthdate_layout"
+                app:layout_constraintStart_toStartOf="@+id/date_birthdate_layout"
+                app:layout_constraintTop_toBottomOf="@+id/gender_textView">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/gender_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/input_edittext"
+                    android:cursorVisible="false"
+                    android:drawableRight="@drawable/ic_spinner"
+                    android:ems="10"
+                    android:fontFamily="@font/font_gotham_book"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:hint="@string/fill_gender"
+                    android:inputType="textCapWords"
+                    android:padding="10dp"
+                    android:textSize="14sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/address_textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/font_gotham_medium"
+                android:text="@string/fill_address"
+                android:textAllCaps="true"
+                android:textColor="@color/colorTitleInputText"
+                android:textSize="9sp"
+                app:layout_constraintStart_toStartOf="@+id/gender_textView"
+                app:layout_constraintTop_toBottomOf="@+id/gender_layout" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/address_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toEndOf="@+id/gender_layout"
+                app:layout_constraintStart_toStartOf="@+id/gender_layout"
+                app:layout_constraintTop_toBottomOf="@+id/address_textView">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/address_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/input_edittext"
+                    android:ems="10"
+                    android:fontFamily="@font/font_gotham_book"
+                    android:hint="@string/fill_address"
+                    android:inputType="textCapWords"
+                    android:nextFocusDown="@+id/province_editText"
+                    android:padding="10dp"
+                    android:textSize="14sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/province_textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/font_gotham_medium"
+                android:text="@string/fill_province"
+                android:textAllCaps="true"
+                android:textColor="@color/colorTitleInputText"
+                android:textSize="9sp"
+                app:layout_constraintStart_toStartOf="@+id/address_textView"
+                app:layout_constraintTop_toBottomOf="@+id/address_layout" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/province_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toEndOf="@+id/address_layout"
+                app:layout_constraintStart_toStartOf="@+id/address_layout"
+                app:layout_constraintTop_toBottomOf="@+id/province_textView">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/province_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/input_edittext"
+                    android:cursorVisible="false"
+                    android:drawableRight="@drawable/ic_spinner"
+                    android:ems="10"
+                    android:fontFamily="@font/font_gotham_book"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:hint="@string/fill_province"
+                    android:inputType="textCapWords"
+                    android:padding="10dp"
+                    android:textSize="14sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/city_textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/font_gotham_medium"
+                android:text="@string/fill_city"
+                android:textAllCaps="true"
+                android:textColor="@color/colorTitleInputText"
+                android:textSize="9sp"
+                app:layout_constraintStart_toStartOf="@+id/province_textView"
+                app:layout_constraintTop_toBottomOf="@+id/province_layout" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/city_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="5dp"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toStartOf="@id/district_layout"
+                app:layout_constraintStart_toStartOf="@id/province_layout"
+                app:layout_constraintTop_toBottomOf="@+id/city_textView">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/city_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/input_edittext"
+                    android:cursorVisible="false"
+                    android:drawableRight="@drawable/ic_spinner"
+                    android:ems="10"
+                    android:fontFamily="@font/font_gotham_book"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:hint="@string/fill_city"
+                    android:inputType="textCapWords"
+                    android:nextFocusDown="@+id/district_editText"
+                    android:padding="10dp"
+                    android:textSize="14sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/district_textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/font_gotham_medium"
+                android:text="@string/fill_district"
+                android:textAllCaps="true"
+                android:textColor="@color/colorTitleInputText"
+                android:textSize="9sp"
+                app:layout_constraintStart_toStartOf="@+id/district_layout"
+                app:layout_constraintTop_toTopOf="@+id/city_textView" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/district_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toEndOf="@+id/province_layout"
+                app:layout_constraintStart_toEndOf="@+id/city_layout"
+                app:layout_constraintTop_toBottomOf="@+id/district_textView">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/district_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/input_edittext"
+                    android:cursorVisible="false"
+                    android:drawableRight="@drawable/ic_spinner"
+                    android:ems="10"
+                    android:fontFamily="@font/font_gotham_book"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:hint="@string/fill_district"
+                    android:inputType="textCapWords"
+                    android:padding="10dp"
+                    android:textSize="14sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/save_button"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rucyc_button"
+                android:fontFamily="@font/font_gotham_book"
+                android:text="@string/save"
+                android:textAllCaps="false"
+                android:textColor="@color/colorButtonWhiteText"
+                app:layout_constraintEnd_toEndOf="@+id/district_layout"
+                app:layout_constraintTop_toBottomOf="@+id/district_layout" />
+
+            <ProgressBar
+                android:id="@+id/save_progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/save_button"
+                app:layout_constraintEnd_toEndOf="@+id/save_button"
+                app:layout_constraintStart_toStartOf="@+id/save_button"
+                app:layout_constraintTop_toTopOf="@+id/save_button" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

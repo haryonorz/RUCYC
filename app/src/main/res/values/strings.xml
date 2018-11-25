@@ -1,0 +1,129 @@
+<resources>
+    <string name="app_name">RUCYC</string>
+
+    <string name="signIn">SIGN IN</string>
+    <string name="next">Next</string>
+    <string name="login_email">Email</string>
+    <string name="login_password">Password</string>
+    <string name="login_dont_have_account">You don\'t have an account?</string>
+    <string name="login_register_here">Sign up here</string>
+    <string name="login_blacklist">Sorry, your account has been disabled.</string>
+    <string name="login_blacklist1">Contact your service provider for more information.</string>
+    <string name="login_unfilled">Sorry it looks like you have not filled out the previous bio form.</string>
+    <string name="login_unfilled1">Click OK to complete the bio form.</string>
+    <string name="login_wrong_email_password">Sorry, the email or password\nyou entered is incorrect</string>
+    <string name="login_error_0">Unable to login user</string>
+    <string name="login_error_1">Unable to retrieve\n user information</string>
+    <string name="not_filled">Sorry, you have not filled out all form fields</string>
+    <string name="error_0">Sorry, there was an unexpected error</string>
+
+    <string name="register_first_name">First Name</string>
+    <string name="register_last_name">Last Name</string>
+    <string name="register_agreement_description">I agree with</string>
+    <string name="register_agreement_user">the user agreement</string>
+    <string name="register_agreement_and">and</string>
+    <string name="register_agreement_privacy">privacy policy</string>
+    <string name="register_agreement_not_checked">Sorry, you have not yet accepted the user agreement and privacy policy</string>
+    <string name="register_error_0">Can not register\nnew user</string>
+    <string name="email_exists">Sorry, the email you are using\n is already registered</string>
+    <string name="email_password_error">Sorry, the email or password\nyou entered does not match</string>
+    <string name="email_hint">Make sure the email you entered is correct</string>
+    <string name="password_hint">and the password you enter\n has a length of 8 letters or numbers</string>
+    <string name="send_error">There was an error sending the request</string>
+    <string name="send_error_0">Unable to save activity</string>
+    <string name="send_success">save activity</string>
+    <string name="send_time_out">Connection time has run out</string>
+    <string name="change_profile_error_0">Can not change profile</string>
+    <string name="change_profile_success">Profile updated successfully</string>
+    <string name="get_profile_error_0">Unable to load Info Activity</string>
+    <string name="post_success">Activity saved successfully</string>
+    <string name="change_password_error_0">Can not change password</string>
+    <string name="change_password_success">Password updated successfully</string>
+    <string name="password_not_match">Sorry, the old password you\nentered does not match</string>
+
+    <string name="fill_birthdate">Birtdate</string>
+    <string name="fill_email">Email</string>
+    <string name="fill_bio">Biodata</string>
+    <string name="fill_date_birthdate">Date</string>
+    <string name="fill_month_birthdate">Month</string>
+    <string name="fill_year_birthdate">Year</string>
+    <string name="fill_weight">Weight</string>
+    <string name="fill_weight_hint">Kg</string>
+    <string name="fill_height">Height</string>
+    <string name="fill_height_hint">Cm</string>
+    <string name="fill_gender">Gender</string>
+    <string name="fill_address">Address</string>
+    <string name="fill_province">Province</string>
+    <string name="fill_city">City</string>
+    <string name="fill_district">District</string>
+    <string name="fill_radius">Radius Notifikasi</string>
+    <string name="fill_error_0">Can not saved\nuser information</string>
+    <string name="save">Save</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="edit_profile">Edit Profile</string>
+    <string name="change_password">Change Password</string>
+    <string name="logout">Log out</string>
+    <string name="dialog_logout">Are you sure you want to sign out of your account?</string>
+    <string name="wait_logout">Please wait a moment...</string>
+    <string name="dialog_remove">Are you sure you want to remove activity?</string>
+    <string name="wait_remove_activity">Removing activity...</string>
+    <string name="success_remove_activity">Successfully removing the activity</string>
+    <string name="eror_remove_activity">Can not remove activity</string>
+    <string name="logout_error_0">Can not sign out of account</string>
+    <string name="about">About</string>
+    <string name="about_desc">
+        Rucyc is a professional running &amp; cycling app and
+        fun app for use in running &amp; cycling as this app will
+        accurately record the data, activities and routes of
+        your sporting activities.
+    </string>
+
+    <string name="select_gender">Select Gender</string>
+    <string name="select_province">Select Province</string>
+    <string name="select_city">Select City</string>
+    <string name="select_district">Select Disctrict</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="auth_time_out">Authentication is exhausted.\nTrying to log in again</string>
+    <string name="uploading_photo">Uploading photo...</string>
+    <string name="uploading_photo_error_0">Unable to upload photo</string>
+
+    <string name="app_toolbar">Rucyc</string>
+    <string name="title_news_feed">Timeline</string>
+    <string name="no_feed">No new activity</string>
+    <string name="get_feed_error_0">Unable to load Activity</string>
+    <string name="title_search">Search</string>
+    <string name="title_activity">Activity</string>
+    <string name="title_notification">Notification</string>
+    <string name="title_user">Profile</string>
+
+    <string-array name="name_of_month">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>Mey</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <string name="menu_play">Play</string>
+    <string name="menu_pause">Pause</string>
+    <string name="menu_stop">Stop</string>
+    <string name="menu_swipe">Swipe</string>
+
+    <string name="file_provider_authority" translatable="false">com.example.zenoinc.rucyc.fileprovider</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_mulai">Map</string>
+</resources>

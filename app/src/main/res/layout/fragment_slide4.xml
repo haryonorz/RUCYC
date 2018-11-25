@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.zenoinc.rucyc.fragment.Slide4">
+    <ImageView
+        android:id="@+id/header_image"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg_intro_genap2" />
+    <ImageView
+        android:id="@+id/footer_image"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/header_image"
+        app:layout_constraintStart_toStartOf="@+id/header_image"
+        app:srcCompat="@drawable/bg_intro_end" />
+    <ImageView
+        android:id="@+id/slide4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/slide4" />
+    <Button
+        android:id="@+id/signin_Button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="136dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rucyc_button"
+        android:fontFamily="@font/font_gotham_medium"
+        android:text="@string/signIn"
+        android:textAllCaps="false"
+        android:textColor="@color/colorButtonWhiteText"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@id/slide4"
+        app:layout_constraintStart_toStartOf="@id/slide4"
+        app:layout_constraintTop_toBottomOf="@id/slide4"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="15dp"
+        android:fontFamily="@font/font_gotham_book"
+        android:gravity="center_vertical"
+        android:text="New here?"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="@id/signin_Button"
+        app:layout_constraintTop_toBottomOf="@id/signin_Button" />
+    <TextView
+        android:id="@+id/signup_TextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="14dp"
+        android:fontFamily="@font/font_gotham_medium"
+        android:gravity="center_vertical"
+        android:text="SIGN UP"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        android:textColor="@color/indicatorSelected"
+        app:layout_constraintEnd_toEndOf="@id/signin_Button"
+        app:layout_constraintTop_toBottomOf="@id/signin_Button" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_background">
+
+    <ListView
+        android:id="@+id/listview_dialog"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:divider="@color/colorDialogDivider"
+        android:dividerHeight="0dp" />
+
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="70dp"
+        android:layout_height="32dp"
+        android:layout_alignBottom="@+id/listview_dialog"
+        android:layout_alignEnd="@+id/listview_dialog"
+        android:layout_alignRight="@+id/listview_dialog"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/cancel"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp" />
+
+</RelativeLayout>

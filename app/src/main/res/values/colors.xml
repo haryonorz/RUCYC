@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#BDE2F3</color>
+    <color name="colorPrimaryDark">#BDE2F3</color>
+    <color name="colorAccent">#BDE2F3</color>
+    <color name="colorGStart">#BDE2F3</color>
+    <color name="colorGEnd">#E0EAFC</color>
+    <color name="colorGStart2">#6DABF4</color>
+    <color name="colorGEnd2">#7AC0F4</color>
+    <color name="colorError">#B00020</color>
+
+    <color name="indicatorSelected">#1D283A</color>
+    <color name="indicatorUnselected">#777E89</color>
+
+    <color name="colorButtonWhiteText">#ffffff</color>
+    <color name="colorBottomNavigationGrey">#d1d3d4</color>
+    <color name="colorTitleInputText">#808284</color>
+    <color name="colorInputText">#000000</color>
+
+    <color name="colorButtonGrey">#d1d3d4</color>
+    <color name="colorHeaderThemeText">#1D283A</color>
+    <color name="colorThemeText">#1D283A</color>
+
+    <color name="colorAppBarBackground">#FAFAFA</color>
+    <color name="colorAppBarText1">#BDE2F3</color>
+    <color name="colorAppBarText2">#1D283A</color>
+    <color name="colorWhiteBackground">#FFFFFF</color>
+
+    <color name="colorDescriptionText">#4B4B4B</color>
+    <color name="colorLineGrey">#e6e7e8</color>
+
+    <color name="colorSearchTitle">#221e1f</color>
+    <color name="colorSearchHintTitle">#a9b1bb</color>
+
+    <color name="colorTransparent">#00FFFFFF</color>
+    <color name="colorDialogText">#000000</color>
+    <color name="colorDialogDivider">#ffffff</color>
+    <color name="colorDialogText1">#ffffff</color>
+
+    <color name="colorImagePreviewBackground">#000000</color>
+    <color name="colorImagePreviewPrimary">#000000</color>
+    <color name="colorImagePreviewPrimaryDark">#000000</color>
+    <color name="colorImagePreviewAccent">#ffffff</color>
+
+    <color name="colorAddCommentBackground">#e4f3ea</color>
+    <color name="colorAddCommentPostText">#7AC0F4</color>
+    <color name="colorAddCommentPBPost">#a9b1bb</color>
+    <color name="colorFPost">#ffffff</color>
+</resources>

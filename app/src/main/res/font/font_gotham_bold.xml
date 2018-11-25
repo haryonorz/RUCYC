@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <font android:fontStyle="normal"
+        android:font="@font/gotham_bold"
+        app:fontStyle="normal"
+        app:font="@font/gotham_bold"/>
+    <font android:fontStyle="italic"
+        android:font="@font/gotham_bold_italic"
+        app:fontStyle="italic"
+        app:font="@font/gotham_bold_italic" />
+</font-family>
